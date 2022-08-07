@@ -1,0 +1,3 @@
+# 3 Kinds of 16 Bit Adders
+
+In this experiment, we designed 3 different 16-bit binary adders using SystemVerilog. The adders implemented were Ripple Adder, Carry Lookahead Adder, and Carry Select Adder. Each adder took in two 16-bit values and a Carry in as inputs, and outputted a 16-bit sum and a Carry Out. We designed 16-bit adders with a 10-bit input set by the switches. The sum is stored in a 17-bit register(to account for overflow) and displayed on 4 hex displays. When the run_accumalate button is pressed, the 10-bit input from the switches is added to the current sum, with each button press accumulating the switch value to the previous sum. The sum can be cleared by pressing the Reset_Clear button.
