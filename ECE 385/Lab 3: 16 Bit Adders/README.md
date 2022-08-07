@@ -52,3 +52,12 @@ A carry select adder makes use of 2 full adders or a group of 2 ripple adders an
 Block diagram of the hierarchiacal 16-bit CSA:
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/93052774/183280704-4fc2c519-07c4-404c-90ba-53a47ccb8f58.png">
+
+Information about actual project:
+
+In our overall design, we had a run_accumulate button and a clear button. When the run_accumulate button was clicked, then the sum from the FPGA switches were added to the sum currently being displayed on the LEDs. However, in order to prevent the accumulator from adding the value on the switches on every rising clock edge, we had to desgin a control system that controlled the FSM that would ensure the values were loaded from the switches into the accumulator only once. The FSM is below:
+
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/93052774/183287171-eeabad7c-4f07-4e91-9252-65c8f13d65d4.png">
+
+
+
