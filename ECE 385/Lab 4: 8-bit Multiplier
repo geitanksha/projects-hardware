@@ -1,3 +1,0 @@
-# 8-bit Multiplier
-
-In this experiment, we designed a multiplier in SystemVerilog. This multiplied two 8-bit 2’s Complement numbers using an add-shift algorithm. This multiplier was displayed on the De10-Lite FPGA board. We use the add-shift system being very similar to the method done by hand on pen-and-paper, however, it uses the MSB of the 2’s complement number to determine whether the last step of the add-shift system is an addition or a subtraction. We store one value in our B register, then save the value to be multiplied in the switches. The result gets added and stored in the register combination of A and B, which slowly gets shifted to the right before another add (or subtract) is performed.
